@@ -1,0 +1,147 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: #fffdf7;
+}
+
+/* BASIC STYLE */
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #212121;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+li{
+    list-style: none;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.gap-2{
+    gap: 2rem
+}
+
+.gap-3{
+    gap: 3rem;
+}
+
+.wrapper{
+    max-width: 1400px;
+    /* background-color: gold; */
+    margin: auto;
+    padding-inline: 1.5rem;
+}
+
+/* HEADER STYLE */
+
+.navbar{
+    min-height: 14vh;
+}
+
+.logo{
+    color: #f2bd12;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #f2bd12;
+    border-radius: 1rem;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #212121;
+}
+
+.cart-icon{
+    color: #212121;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.cart-icon .cart-value{
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    font-size: 0.85rem;
+    background-color: #f2bd12;
+    color: #212121;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 100vw;
+    text-align: center;
+    line-height: 20px;
+}
+/* SECTION STYLE */
+
+
+
+
+
+/* FOOTER STYLE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
