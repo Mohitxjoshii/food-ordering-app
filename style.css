@@ -1,91 +1,115 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto Condensed", sans-serif;
+    /* border: 0.1rem solid red; */
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
-body{
+body {
     background-color: #fffdf7;
 }
 
 /* BASIC STYLE */
-a{
+a {
     font-size: 1.1rem;
     text-decoration: none;
     color: #212121;
 }
 
-.flex{
+.flex {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.between{
+.between {
     justify-content: space-between;
 }
 
-.gap-2{
+.gap-2 {
     gap: 2rem
 }
 
-.gap-3{
+.gap-3 {
     gap: 3rem;
 }
 
-.wrapper{
+.wrapper {
     max-width: 1400px;
     /* background-color: gold; */
     margin: auto;
     padding-inline: 1.5rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+.p-top {
+    padding-top: 10rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-4{
+    margin-top: 4rem;
+}
+
+
+
+
 /* HEADER STYLE */
 
-.navbar{
+.navbar {
     min-height: 14vh;
 }
 
-.logo{
+.logo {
     color: #f2bd12;
     font-size: 2rem;
     font-weight: bold;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background-color: #f2bd12;
     border-radius: 1rem;
-    padding: 15px 20px;
+    padding: .9rem 2rem;
     font-size: 1.1rem;
     color: white;
     box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
     transition: 0.3s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: #212121;
 }
 
-.cart-icon{
+.cart-icon {
     color: #212121;
     font-size: 1.3rem;
     position: relative;
 }
 
-.cart-icon .cart-value{
+.cart-icon .cart-value {
     position: absolute;
     top: 50%;
     right: -10px;
@@ -98,7 +122,132 @@ li{
     text-align: center;
     line-height: 20px;
 }
+
+.desktop-action .hamburger {
+    font-size: 1.5rem;
+    display: none;
+}
+
+.mobile-manu {
+    display: none;
+}
+
+
+
 /* SECTION STYLE */
+
+.hero-section {
+    /* background-color: gold; */
+    min-height: calc(100vh - 14vh);
+}
+
+.content,
+.image-container,
+.service-card {
+    flex: 1;
+    flex-basis: 300px;
+}
+
+h1 {
+    font-size: 5.6vw;
+    color: #212121;
+}
+
+
+h1 span {
+    color: #f2bd12;
+}
+
+p {
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+.para {
+    margin-block: 2rem;
+    max-width: 550px;
+}
+
+.social-icon {
+    background-color: #fcf1cc;
+    width: 3rem;
+    aspect-ratio: 1;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    line-height: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 2px 1px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.social-icon:hover {
+    background-color: #212121;
+    color: white;
+}
+
+
+/* SECTION 01 */
+
+h5{
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    color: #f2bd12;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 3.7rem;
+    text-transform: capitalize;
+    color: #212121;
+}
+
+h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #212121;
+}
+
+.service-card h3{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem ;
+}
+
+/* SECTION 02 */
+
+.order-card{
+    flex: 1; 
+    flex-basis: 300px;
+    background-color: #fff;
+    padding: 0 1rem 2rem 1rem;
+      border: 0.1rem solid #f2bd12;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px,
+            rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+        transition: all 0.5s ease-in-out;
+}
+
+
+.order-card img{
+    width: 15rem ;
+    filter: drop-shadow(
+        rgba(0, 0, 0, 0.3) 0 10px 10px
+    );
+}
+
+h4{
+    font-size: 1.8rem;
+    color: #212121;
+}
+
+.order-card .price{
+    font-size: 1.7rem;
+    color: #f2bd12;
+    padding: 1.3rem 0 2rem 0;
+}
+
 
 
 
@@ -116,32 +265,67 @@ li{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 780px) {
+
+    /* header styling */
+    .navlist,
+    .desktop-action .btn {
+        display: none;
+    }
+
+    .desktop-action .hamburger {
+        display: block;
+    }
+
+    .mobile-manu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        gap: 1rem;
+        top: 20%;
+        left: -100%;
+        transform: translateX(-50%);
+        width: 20rem;
+        padding: 2rem;
+        background-color: #fff;
+        border: 0.1rem solid #f2bd12;
+        align-items: center;
+        border-radius: 2rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 8px 8px 8px,
+            rgba(0, 0, 0, 0.05) 8px 8px 8px inset;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .mobile-manu-active {
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    /* SECTION STYLING */
+
+    /* HERO STYLING */
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    .content {
+        padding-top: 3rem;
+    }
+
+    .gap-2 {
+        gap: 1.4rem;
+    }
+
+    .gap-4 {
+        gap: 4rem;
+    }
+
+    /* SECTION 01 */
+
+    h2{
+        font-size: 3rem;
+    }
+}
