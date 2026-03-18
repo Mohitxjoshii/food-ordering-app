@@ -16,23 +16,23 @@
     <!-- HEADER PART -->
     <header>
         <nav class="navbar flex between wrapper">
-            <a href="#" class="logo">Foodie</a>
+            <a href="#home" class="logo">Foodie</a>
             <!-- DESKTOP MENU -->
             <ul class="navlist flex gap-3">
                 <li>
-                    <a href="">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="">Menu</a>
+                    <a href="#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="">About us</a>
+                    <a href="#reviews">About us</a>
                 </li>
                 <li>
-                    <a href="">Contacts</a>
+                    <a href="#contact">Contacts</a>
                 </li>
             </ul>
             <div class="desktop-action flex gap-2">
@@ -41,9 +41,14 @@
                     <span class="cart-value">0</span>
                 </a>
 
-                <a href="#" class="btn ">Sign up
-                    &nbsp
-                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <a href="login.html" class="btn ">
+                    <i class="fa-solid fa-user"></i>
+                    &nbsp Login
+                </a>
+
+                <a href="signup.html" class="btn ">
+                    <i class="fa-solid fa-user-plus"></i>
+                    &nbsp Sign up
                 </a>
 
                 <a href="#" class="hamburger">
@@ -54,24 +59,30 @@
             <!-- MOBILE MENU -->
             <ul class="mobile-manu">
                 <li>
-                    <a href="">Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
-                    <a href="">Menu</a>
+                    <a href="#menu">Menu</a>
                 </li>
                 <li>
-                    <a href="">Services</a>
+                    <a href="#services">Services</a>
                 </li>
                 <li>
-                    <a href="">About us</a>
+                    <a href="#reviews">About us</a>
                 </li>
                 <li>
-                    <a href="">Contacts</a>
+                    <a href="#contact">Contacts</a>
                 </li>
                 <li>
-                    <a href="#" class="btn ">Sign up
-                        &nbsp
-                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <a href="login.html" class="btn ">
+                        <i class="fa-solid fa-user"></i>
+                        &nbsp Login
+                    </a>
+                </li>
+                <li>
+                    <a href="signup.html" class="btn ">
+                        <i class="fa-solid fa-user-plus"></i>
+                        &nbsp Sign up
                     </a>
                 </li>
             </ul>
@@ -80,7 +91,7 @@
 
     <!-- SECTION PART -->
     <main>
-        <section>
+        <section id="home">
             <div class="hero-section flex wrapper gap-4">
                 <div class="content">
                     <h1>Enjoy Your Delicious
@@ -93,7 +104,7 @@
 
                     <div class="flex gap-2">
 
-                        <a href="#" class="btn">Order now
+                        <a href="#menu" class="btn">Order now
                         </a>
                         <a href="#" class="social-icon">
                             <i class="fa-brands fa-x-twitter"></i>
@@ -115,7 +126,7 @@
             </div>
         </section>
 
-        <section class="wrapper p-top">
+        <section id="services" class="wrapper p-top">
             <div class="text-center">
                 <h5>Our Services</h5>
                 <h2>How does it work?</h2>
@@ -151,7 +162,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="menu">
             <div class="wrapper p-top ">
                 <div class="text-center">
                     <h5>Our Menu </h5>
@@ -209,7 +220,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="reviews">
             <div class="wrapper p-top flex gap-3">
                 <div class="image-container">
                     <img src="image/delivery-boy-with-phone.png" alt="">
@@ -318,7 +329,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="contact">
             <div class="wrapper p-top">
                 <div class="text-center">
                     <h5>Our subscribe</h5>

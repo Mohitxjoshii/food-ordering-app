@@ -25,6 +25,16 @@ hamburger.addEventListener('click', ()=> {
     bars.classList.toggle('fa-xmark');
 });
 
+// Close mobile menu when a link is clicked
+const mobileMenuLinks = document.querySelectorAll('.mobile-manu a');
+mobileMenuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.remove('mobile-manu-active');
+        bars.classList.remove('fa-xmark');
+        bars.classList.add('fa-bars');
+    });
+});
+
 
 let productList = [];
 let cartProduct = [];

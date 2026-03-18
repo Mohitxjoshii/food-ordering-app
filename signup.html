@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up - Foodie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- HEADER PART -->
+    <header>
+        <nav class="navbar flex between wrapper">
+            <a href="index.html#home" class="logo">Foodie</a>
+            <div class="desktop-action flex gap-2">
+                <a href="login.html" class="btn">
+                    <i class="fa-solid fa-user"></i>
+                    &nbsp Login</a>
+                <a href="index.html#home" class="btn">
+                    <i class="fa-solid fa-home"></i>
+                    &nbsp Home</a>
+                <a href="#" class="hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+            <!-- MOBILE MENU -->
+            <ul class="mobile-manu">
+                <li>
+                    <a href="index.html#home">Home</a>
+                </li>
+                <li>
+                    <a href="login.html" class="btn">Login</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SIGNUP SECTION -->
+    <main>
+        <section class="signup-section">
+            <div class="wrapper">
+                <div class="signup-container">
+                    <div class="signup-content">
+                        <h1>Create Your Account</h1>
+                        <p>Join Foodie to start ordering delicious food</p>
+
+                        <form class="signup-form">
+                            <div class="form-group">
+                                <label for="fullname">Full Name</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="confirmpassword">Confirm Password</label>
+                                <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm your password" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                            </div>
+
+                            <button type="submit" class="btn">Sign Up</button>
+                        </form>
+
+                        <p class="login-link">Already have an account? <a href="index.html">Back to Home</a></p>
+                    </div>
+
+                    <div class="signup-image">
+                        <img src="image/delivery-boy.png" alt="Signup">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER PART -->
+    <footer>
+        <div class="footer-container">
+            <div class="wrapper flex between">
+                <div class="footer-wrapper">
+                    <h3 class="logo">Foodie</h3>
+                    <p style="color: gray; margin-top: 1rem;">We provide the best food delivery service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .signup-section {
+            min-height: calc(100vh - 14vh);
+            display: flex;
+            align-items: center;
+            padding: 2rem 0;
+        }
+
+        .signup-container {
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            background-color: #fff;
+            padding: 3rem;
+            border-radius: 2rem;
+            box-shadow: rgba(0, 0, 0, 0.1) 0 5px 15px;
+        }
+
+        .signup-content {
+            flex: 1;
+            flex-basis: 300px;
+        }
+
+        .signup-content h1 {
+            font-size: 2.5rem;
+            color: #212121;
+            margin-bottom: 0.5rem;
+        }
+
+        .signup-content > p {
+            color: gray;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .signup-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group label {
+            font-size: 1rem;
+            color: #212121;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            padding: 0.8rem 1rem;
+            border: 0.1rem solid #f2bd12;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: "Roboto Condensed", sans-serif;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #f2bd12;
+            box-shadow: 0 0 5px rgba(242, 189, 18, 0.3);
+        }
+
+        button.btn {
+            display: block;
+            margin: 1.5rem 0 0 0;
+            width: auto;
+            border: none;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .login-link {
+            text-align: center;
+            margin-top: 1.5rem;
+            color: gray;
+        }
+
+        .login-link a {
+            color: #f2bd12;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+        .signup-image {
+            flex: 1;
+            flex-basis: 300px;
+        }
+
+        .signup-image img {
+            width: 100%;
+            max-width: 400px;
+        }
+
+        @media screen and (max-width: 780px) {
+            .signup-container {
+                flex-direction: column;
+                padding: 2rem;
+                gap: 2rem;
+            }
+
+            .signup-content h1 {
+                font-size: 1.8rem;
+            }
+
+            .signup-image img {
+                max-width: 250px;
+            }
+        }
+    </style>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-manu');
+        const bars = document.querySelector('.fa-bars');
+
+        hamburger.addEventListener('click', ()=> {
+            mobileMenu.classList.toggle('mobile-manu-active');
+            bars.classList.toggle('fa-bars');
+            bars.classList.toggle('fa-xmark');
+        });
+
+        const mobileMenuLinks = document.querySelectorAll('.mobile-manu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('mobile-manu-active');
+                bars.classList.remove('fa-xmark');
+                bars.classList.add('fa-bars');
+            });
+        });
+    </script>
+</body>
+
+</html>
